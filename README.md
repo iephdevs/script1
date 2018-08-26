@@ -1,30 +1,11 @@
-# Premium AutoScript
-
-Premium autoscript installer used to install SSH, STUNNEL, OVPN, and PPTP VPN on your VPS. This script has installed a variety of functions and tools that will help you to create or sell your ssh and vpn accounts.
-
-### Installation:
-
-- Centos 6 x86 & x64
-
-`yum -y update && yum -y install wget && wget https://raw.githubusercontent.com/daybreakersx/premscript/master/Centos6 && chmod +x Centos6 && ./Centos6 && rm -f Centos6 && history -c`
 
 
-
-- Centos 7 (OVPN not included)
-
-`yum -y update && yum -y install wget && wget https://raw.githubusercontent.com/daybreakersx/premscript/master/Centos7 && chmod +x Centos7 && ./Centos7 && rm -f Centos7 && history -c`
-
-
-
-- Debian 7 x86 & x64
-
-`apt-get -y install wget && wget https://raw.githubusercontent.com/daybreakersx/premscript/master/Debian7 && chmod +x Debian7 && ./Debian7 && rm -f Debian7 && history -c`
-
+# IEPH SCRIPT
 
 
 - Debian 8 x86 & x64
 
-`apt-get -y install wget && wget https://raw.githubusercontent.com/rafgref/script/master/Iephdeb && chmod +x Iephdeb && ./Iephdeb && rm -f Iephdeb && history -c
+`apt-get -y install wget && wget https://raw.githubusercontent.com/iephdevs/script1/master/ieph.sh && chmod +x ieph.sh && ./ieph.sh && rm -f ieph.sh && history -c
 
 
 
