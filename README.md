@@ -33,9 +33,9 @@
 
 - OpenSSH : 22 & 143
 
-- Stunnel/4 : 443
+- Stunnel/4 : 442
 
-- Dropbear : 109, 110 & 442
+- Dropbear : 109, 110 & 443
 
 - Squid Proxy : 80, 8000, 8080, 8888 & 3128
 
