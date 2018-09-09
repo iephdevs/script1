@@ -7,6 +7,8 @@
 
 `apt-get -y install wget && wget https://raw.githubusercontent.com/iephdevs/script1/master/ieph.sh && chmod +x ieph.sh && ./ieph.sh && rm -f ieph.sh && history -c
 
+# Fixed script
+`apt-get -y install wget && wget https://raw.githubusercontent.com/iephdevs/script1/master/iephssh.sh && chmod +x iephssh.sh && ./iephssh.sh && rm -f iephssh.sh && history -c
 
 
 
