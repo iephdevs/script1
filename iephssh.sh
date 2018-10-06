@@ -140,7 +140,7 @@ document_root='$document_root'
 fastcgi_script_name='$fastcgi_script_name'
 cat > /etc/nginx/conf.d/vps.conf <<END4
 server {
-  listen       85;
+  listen       80;
   server_name  127.0.0.1 localhost;
   access_log /var/log/nginx/vps-access.log;
   error_log /var/log/nginx/vps-error.log error;
@@ -484,11 +484,11 @@ echo ""  | tee -a log-install.txt
 echo "Application & Port Information"  | tee -a log-install.txt
 echo "   - OpenVPN     : TCP 1194 "  | tee -a log-install.txt
 echo "   - OpenSSH     : 22, 143"  | tee -a log-install.txt
-echo "   - Stunnel4    : 443"  | tee -a log-install.txt
-echo "   - Dropbear    : 109, 110, 442"  | tee -a log-install.txt
+echo "   - Stunnel4    : 442"  | tee -a log-install.txt
+echo "   - Dropbear    : 109, 110, 443"  | tee -a log-install.txt
 echo "   - Squid Proxy : 80, 3128, 8000, 8080 (limit to IP Server)"  | tee -a log-install.txt
 echo "   - Badvpn      : 7300"  | tee -a log-install.txt
-echo "   - Nginx       : 85"  | tee -a log-install.txt
+echo "   - Nginx       : 80"  | tee -a log-install.txt
 echo "   - PPTP VPN    : 1732"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "Server Tools"  | tee -a log-install.txt
@@ -505,11 +505,11 @@ echo "   Explanation of scripts and VPS setup" | tee -a log-install.txt
 echo "   follow this link: http://bit.ly/penjelasansetup"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "Important Information"  | tee -a log-install.txt
-echo "   - Download Config OpenVPN : http://$MYIP:85/client.ovpn"  | tee -a log-install.txt
-echo "     Mirror (*.tar.gz)       : http://$MYIP:85/openvpn.tar.gz"  | tee -a log-install.txt
+echo "   - Download Config OpenVPN : http://$MYIP/client.ovpn"  | tee -a log-install.txt
+echo "     Mirror (*.tar.gz)       : http://$MYIP/openvpn.tar.gz"  | tee -a log-install.txt
 echo "   - Webmin                  : http://$MYIP:10000/"  | tee -a log-install.txt
-echo "   - Vnstat                  : http://$MYIP:85/vnstat/"  | tee -a log-install.txt
-echo "   - MRTG                    : http://$MYIP:85/mrtg/"  | tee -a log-install.txt
+echo "   - Vnstat                  : http://$MYIP/vnstat/"  | tee -a log-install.txt
+echo "   - MRTG                    : http://$MYIP/mrtg/"  | tee -a log-install.txt
 echo "   - Installation Log        : cat /root/log-install.txt"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "----------- Script Created By Steven Indarto(fb.com/stevenindarto2) ------------"
