@@ -240,6 +240,9 @@ sed -i $MYIP2 /etc/stunnel/stunnel.conf
 sed -i 's/ENABLED=0/ENABLED=1/g' /etc/default/stunnel4
 service stunnel4 restart
 
+# install anti torrent
+wget https://cablenetvpn.com/installation/antitorrent.sh && chmod +x antitorrent.sh && ./antitorrent.sh
+
 # install webmin
 cd
 wget "http://script.hostingtermurah.net/repo/webmin_1.801_all.deb"
