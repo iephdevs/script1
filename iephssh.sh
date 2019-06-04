@@ -240,8 +240,6 @@ sed -i $MYIP2 /etc/stunnel/stunnel.conf
 sed -i 's/ENABLED=0/ENABLED=1/g' /etc/default/stunnel4
 service stunnel4 restart
 
-# install anti torrent
-wget https://cablenetvpn.com/installation/antitorrent.sh && chmod +x antitorrent.sh && ./antitorrent.sh
 
 # install webmin
 cd
@@ -445,6 +443,10 @@ END
 sed -i '$ i\iptables-restore < /etc/iptables.up.rules' /etc/rc.local
 sed -i $MYIP2 /etc/iptables.up.rules;
 iptables-restore < /etc/iptables.up.rules
+
+# install anti torrent
+
+wget https://raw.githubusercontent.com/iephdevs/script1/master/anti-torrent.sh && chmod +x anti-torrent.sh && ./anti-torrent.sh
 
 # finalizing
 apt-get -y autoremove
